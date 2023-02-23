@@ -122,12 +122,18 @@ $md-toggle__drawer--checked:
       // Ensure smooth scrolling on iOS
       .md-sidebar__scrollwrap {
         touch-action: pan-y;
+
+        .md-nav__item {
+            padding: 0 0;
+        }
       }
     }
   }
 
   // Wrapper for scrolling on overflow
   &__scrollwrap {
+    // screen height minus (header bar + search bar + product switcher)
+    max-height: calc(100vh - 240px);
     overflow-y: auto;
     // Hack: reduce jitter
     backface-visibility: hidden;
