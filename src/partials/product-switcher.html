@@ -22,13 +22,6 @@
         width="auto"
         alt="Traefik Hub"
       />
-      {% elif config.product == "mesh" %}
-      <img
-        src="{{ 'assets/images/logo-traefik-mesh-logo.svg' | url }}"
-        height="48px"
-        width="auto"
-        alt="Traefik Mesh"
-      />
       {% endif %}
       <span class="icon">
         <svg
@@ -79,19 +72,6 @@
               <div class="dmi-description">
                 Kubernetes-Native API Management
               </div>
-            </a>
-          </div>
-          {% endif %} {% if config.product != "mesh" %}
-          <div class="dm-item">
-            <div class="dmi-image mesh">
-              <img
-                src="{{ 'assets/images/traefik-mesh-logo.svg' | url }}"
-                alt="Traefik Mesh"
-              />
-            </div>
-            <a class="dmi-details" href="https://doc.traefik.io/traefik-mesh/">
-              <div class="dmi-title">Traefik Mesh</div>
-              <div class="dmi-description">The simplest service mesh</div>
             </a>
           </div>
           {% endif %} {% if config.product != "enterprise" %}
