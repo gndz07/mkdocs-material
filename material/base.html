@@ -49,10 +49,10 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.a918a949.min.css' | url }}">
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.19ab1908.min.css' | url }}">
       {% if config.theme.palette %}
         {% set palette = config.theme.palette %}
-        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.bd9ced1d.min.css' | url }}">
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.92513f3b.min.css' | url }}">
         {% if palette.primary %}
           {% import "partials/palette.html" as map %}
           {% set primary = map.primary(
@@ -81,7 +81,7 @@
       <link rel="stylesheet" href="{{ path | url }}">
     {% endfor %}
     {% block analytics %}
-      <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-NMWC63S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script>
+      <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});e=t.getElementsByTagName(a)[0],n=t.createElement(a);n.async=!0,n.src="https://www.googletagmanager.com/gtm.js?id=GTM-NMWC63S",e.parentNode.insertBefore(n,e)}(window,document,"script","dataLayer")</script>
     {% endblock %}
     {% block extrahead %}{% endblock %}
     <script src="https://traefik.github.io/traefiklabs-header-app/main-v1.js"></script>
@@ -183,8 +183,8 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ 'assets/javascripts/vendor.08c56446.min.js' | url }}"></script>
-      <script src="{{ 'assets/javascripts/bundle.1a93b9c0.min.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/vendor.b8e52162.min.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/bundle.634ca517.min.js' | url }}"></script>
       {%- set translations = {} -%}
       {%- for key in [
         "clipboard.copy",
@@ -212,7 +212,7 @@
           base: "{{ base_url }}",
           features: {{ config.theme.features or [] | tojson }},
           search: Object.assign({
-            worker: "{{ 'assets/javascripts/worker/search.8c7e0a7e.min.js' | url }}"
+            worker: "{{ 'assets/javascripts/worker/search.4780b2b5.min.js' | url }}"
           }, typeof search !== "undefined" && search)
         })
       </script>
