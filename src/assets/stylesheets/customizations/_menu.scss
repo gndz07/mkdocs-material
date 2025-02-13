@@ -118,3 +118,32 @@
     margin-left: 0;
   }
 }
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar__scrollwrap {
+    top: 110px;
+
+    .md-nav--primary {
+      // MKdocs header and link
+      label.md-nav__title[for=__drawer] {
+        a {
+          display: none !important;
+        }
+        color: transparent;
+        background-color: transparent
+      }
+  
+      .md-nav__source {
+        display: none;
+      }
+  
+      .md-sidebar.md-sidebar--primary {
+        margin-top: 110px;
+      }
+
+      .md-nav__toggle ~ .md-nav {
+        margin-top: 110px;
+      }
+    }
+  }
+}
