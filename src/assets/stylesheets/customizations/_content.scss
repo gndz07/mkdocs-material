@@ -2,6 +2,12 @@
   padding-top: 0;
 }
 
+@media screen and (max-width: 76.1875em) {
+  .md-container {
+    padding-top: 0.5rem;
+  }
+}
+
 .md-content h1 {
   color: var(--dark) !important;
   font-weight: 700 !important;
