@@ -6,7 +6,6 @@
   font-family: Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  position: inherit;
 
   img.gopher {
     margin: 0 2px 0 16px;
@@ -168,5 +167,11 @@
     &.hub {
       background-color: #7F8C2B;
     }
+  }
+}
+
+@media screen and (max-width: 76.1875em) {
+  .product-switcher {
+    position: inherit;
   }
 }
