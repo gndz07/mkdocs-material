@@ -262,7 +262,7 @@ export function defaultTransform(query: string): string {
     .trim()                                         /* => 3 */
 }
 ```
-
+{% raw %}
 If you want to switch to the default behavior of the `mkdocs` or `readthedocs`
 template, both of which don't transform the query prior to submission, or
 customize the `transform` function, you can do this by [overriding the 
@@ -279,7 +279,7 @@ customize the `transform` function, you can do this by [overriding the
   </script>
 {% endblock %}
 ```
-
+{% endraw %}
 The `transform` function will receive the query string as entered by the user
 and must return the processed query string to be submitted to the search index.
 

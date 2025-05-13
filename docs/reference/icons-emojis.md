@@ -1,7 +1,7 @@
 ---
 template: overrides/main.html
 ---
-
+{% raw %}
 # Icons + Emojis
 
 One of the best features of Material for MkDocs is the possibility to use [more
@@ -223,3 +223,4 @@ This is exactly what Material for MkDocs does in its templates.
 
   [22]: ../customization.md#extending-the-theme
   [23]: https://jinja.palletsprojects.com/en/2.11.x/templates/#include
+{% endraw %}

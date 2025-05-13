@@ -82,7 +82,7 @@ extra:
 In order to add `meta` tags to your document, you can [extend the theme][7] and
 simply [override the `extrahead` block][8] with the respective tags, e.g. to set
 policies for search engines:
-
+{% raw %}
 ``` html
 {% block extrahead %}
   <meta property="robots" content="noindex, nofollow" />
@@ -111,7 +111,7 @@ Some further examples, including [Open Graph][1] and [Twitter Cards][9]:
       <meta property="og:image:height" content="630" />
     {% endblock %}
     ```
-
+{% endraw %}
 === "Twitter Cards"
 
     ``` html

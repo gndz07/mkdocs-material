@@ -57,11 +57,11 @@ Welcome to Material for MkDocs!
 ```
 
 A list of all predefined variables can be printed with:
-
+{% raw %}
 ```
 {{ macros_info() }}
 ```
-
+{% endraw %}
 ### Using custom variables
 
 All data defined under `extra` in `mkdocs.yml` is automatically exposed as a
@@ -69,7 +69,7 @@ variable and can be used from the template. This enables centralized parameter
 storage and management.
 
 _Example_:
-
+{% raw %}
 === "docs/page.md"
 
     ```` markdown
@@ -140,7 +140,7 @@ _Example_:
   [2]: #macros
   [3]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   [4]: https://jinja.palletsprojects.com/en/2.11.x/templates/#include
-
+{% endraw %}
 ## Customization
 
 ### Custom macros

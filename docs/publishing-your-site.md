@@ -43,7 +43,7 @@ contents:
           - run: pip install mkdocs-material
           - run: mkdocs gh-deploy --force
     ```
-
+{% raw %}
 === "Insiders"
 
     ``` yaml
@@ -67,7 +67,7 @@ contents:
     env:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     ```
-
+{% endraw %}
 Now, when a new commit is pushed to either the `master` or `main` branches,
 the static site is automatically built and deployed. Commit and push the file
 to your repository to see the workflow in action.

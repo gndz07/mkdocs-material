@@ -1,7 +1,7 @@
 ---
 template: overrides/main.html
 ---
-
+{% raw %}
 # Upgrading
 
 Upgrade to the latest version with:
@@ -1167,3 +1167,4 @@ None.
 ### Changes to `*.html` files
 
 None.
+{% endraw %}

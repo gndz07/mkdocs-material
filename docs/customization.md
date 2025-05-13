@@ -1,7 +1,7 @@
 ---
 template: overrides/main.html
 ---
-
+{% raw %}
 # Customization
 
 Project documentation is as diverse as the projects themselves and Material for
@@ -275,3 +275,4 @@ the aforementioned directory in the original `mkdocs.yml`.
 
 Now you can run `mkdocs build` and you should see your documentation with your
 changes to the original theme.
+{% endraw %}
